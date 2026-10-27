@@ -1,0 +1,27 @@
+Register Allocation Using Graph Colouring
+Enter one assignment per line; finish each statement with ';'.
+Example: a = b + c;
+Finish input with Ctrl+D (Linux/macOS) or Ctrl+Z then Enter (Windows).
+
+Register Allocation Using Graph Colouring
+==========================================
+Statements parsed: 3
+Available registers: 3
+Assumption: the last assignment's left-hand variable is the program result.
+
+Interference edges:
+a -- b
+a -- c
+b -- c
+b -- d
+
+Register assignment:
+Variable         Register
+a                R1
+b                R2
+c                R3
+d                R1
+e                R1
+
+Registers used: 3
+Note: variables connected by an interference edge must use different registers.
